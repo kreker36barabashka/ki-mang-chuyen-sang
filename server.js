@@ -8,7 +8,7 @@ app.use(express.json());
 
 // Route for load distribution
 app.get('/load-balance', (req, res) => {
-    res.send('Tải trọng được phân phối thành công!');
+    res.send('Load balancing successful!');
 });
 
 // Start the server
