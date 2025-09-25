@@ -1,5 +1,8 @@
 class LoadBalancer {
     constructor(servers) {
+        if (!Array.isArray(servers) || servers.length === 0) {
+            throw new Error('Servers must be a non-empty array.');
+        }
         this.servers = servers;
         this.currentIndex = 0;
     }
