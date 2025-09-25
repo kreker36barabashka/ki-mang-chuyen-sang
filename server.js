@@ -11,6 +11,11 @@ app.get('/load-balance', (req, res) => {
     res.send('Load balancing successful!');
 });
 
+// Health check route
+app.get('/health', (req, res) => {
+    res.status(200).send('Server is healthy');
+});
+
 // Start the server
 const server = http.createServer(app);
 server.listen(port, () => {
