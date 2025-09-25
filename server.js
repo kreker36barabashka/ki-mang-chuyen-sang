@@ -14,5 +14,5 @@ app.get('/load-balance', (req, res) => {
 // Start the server
 const server = http.createServer(app);
 server.listen(port, () => {
-    console.log(`Server đang chạy tại http://localhost:${port}`);
+    console.log(`Server is running at http://localhost:${port}`);
 });
