@@ -1,0 +1,12 @@
+{
+  "name": "ki-mang-chuyen-sang",
+  "version": "1.0.0",
+  "description": "Hệ thống quản lý tải trọng cho ứng dụng web",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
